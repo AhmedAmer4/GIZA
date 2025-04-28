@@ -71,3 +71,22 @@ h1 {
 .section:hover {
     background-color: #005fa3;
 }
+iframe {
+    margin-top: 20px;
+    width: 90%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+}
+.back-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.back-btn:hover {
+    background-color: #005fa3;
+}
