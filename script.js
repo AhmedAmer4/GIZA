@@ -1,29 +1,14 @@
-
 function hideLoader() {
     document.getElementById('loader').style.display = 'none';
     document.getElementById('content').style.display = 'block';
 }
 
-window.onload = hideLoader;
-
 function changeLanguage() {
     const lang = document.getElementById('language-selector').value;
     const translations = {
-        en: {
-            title: "GIZA ARABIA LEAK DETECTION PROJECT",
-            description: "Giza Arabia is a leading company specialized in providing innovative solutions for water networks, infrastructure development, and leak detection services. With a strong commitment to quality and excellence, Giza Arabia has become a trusted partner for major cities and municipalities, ensuring sustainable water management and advanced infrastructure solutions across the region.",
-            sections: ["DATA GATHERING", "VALVE EVALUATION", "LEAK DETECTION", "LEAK REPAIR"]
-        },
-        ar: {
-            title: "مشروع كشف التسرب لشركة جيزة العربية",
-            description: "جيزة العربية شركة رائدة في تقديم حلول مبتكرة لشبكات المياه وتطوير البنية التحتية وخدمات كشف التسرب. من خلال التزام قوي بالجودة والتميز، أصبحت جيزة العربية شريكًا موثوقًا به للمدن والبلديات الكبرى، مما يضمن إدارة مستدامة للمياه وحلول بنية تحتية متقدمة في جميع أنحاء المنطقة.",
-            sections: ["جمع البيانات", "تقييم الصمامات", "كشف التسرب", "إصلاح التسرب"]
-        },
-        fr: {
-            title: "Projet de Détection des Fuites - Giza Arabia",
-            description: "Giza Arabia est une entreprise leader spécialisée dans la fourniture de solutions innovantes pour les réseaux d'eau, le développement des infrastructures et les services de détection de fuites. Grâce à un engagement fort envers la qualité et l'excellence, Giza Arabia est devenue un partenaire de confiance pour les grandes villes et municipalités, garantissant une gestion durable de l'eau et des infrastructures avancées à travers la région.",
-            sections: ["Collecte de données", "Évaluation des vannes", "Détection des fuites", "Réparation des fuites"]
-        }
+        en: { title: "GIZA ARABIA LEAK DETECTION PROJECT", description: "Giza Arabia is a leading company specialized in providing innovative solutions for water networks, infrastructure development, and leak detection services.", sections: ["DATA GATHERING", "VALVE EVALUATION", "LEAK DETECTION", "LEAK REPAIR"] },
+        ar: { title: "مشروع كشف التسرب لشركة جيزة العربية", description: "جيزة العربية شركة رائدة في تقديم حلول مبتكرة لشبكات المياه وتطوير البنية التحتية وخدمات كشف التسرب.", sections: ["جمع البيانات", "تقييم الصمامات", "كشف التسرب", "إصلاح التسرب"] },
+        fr: { title: "Projet de Détection des Fuites - Giza Arabia", description: "Giza Arabia est une entreprise leader spécialisée dans les solutions pour les réseaux d'eau et les infrastructures.", sections: ["Collecte de données", "Évaluation des vannes", "Détection des fuites", "Réparation des fuites"] }
     };
 
     document.getElementById('main-title').innerText = translations[lang].title;
