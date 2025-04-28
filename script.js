@@ -1,10 +1,10 @@
 
 function hideLoader() {
-    setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-    }, 1500);
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
 }
+
+window.onload = hideLoader;
 
 function changeLanguage() {
     const lang = document.getElementById('language-selector').value;
@@ -16,7 +16,7 @@ function changeLanguage() {
         },
         ar: {
             title: "مشروع كشف التسرب لشركة جيزة العربية",
-            description: "جيزة العربية شركة رائدة في تقديم حلول مبتكرة لشبكات المياه وتطوير البنية التحتية وخدمات كشف التسرب. من خلال التزام قوي بالجودة والتميز، أصبحت جيزة العربية شريكًا موثوقًا به للمدن والبلديات الكبرى، مما يضمن إدارة مستدامة للمياه وحلول بنية تحتية متقدمة في جميع أنحاء المنطقة. مهمتنا هي تقديم تقنيات متطورة وخدمات موثوقة تسهم في بناء مجتمعات أفضل وأكثر أمانًا للأجيال القادمة.",
+            description: "جيزة العربية شركة رائدة في تقديم حلول مبتكرة لشبكات المياه وتطوير البنية التحتية وخدمات كشف التسرب. من خلال التزام قوي بالجودة والتميز، أصبحت جيزة العربية شريكًا موثوقًا به للمدن والبلديات الكبرى، مما يضمن إدارة مستدامة للمياه وحلول بنية تحتية متقدمة في جميع أنحاء المنطقة.",
             sections: ["جمع البيانات", "تقييم الصمامات", "كشف التسرب", "إصلاح التسرب"]
         },
         fr: {
